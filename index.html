@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Regina Tailwind resume</title>
+</head> 
+<body id="body">
+  
+    <div id="header" class="absolute top-0 bg-white shadow-b justify-between header menu flex px-16 mb-0 sticky shadow shadow-b">
+        <div class="flex flex-col justify-center my-auto"><h1 class="flex-1 text-lg font-bold">Regina.</h1></div>
+        <div class="hidden lg:flex lg:justify-between lg:ml-auto lg:py-10 lg:space-x-4">
+          <a href="#" class="hover:underline hover:text-blue-500">Hello</a>
+          <a href="#skills" class="hover:underline hover:text-blue-500" >Skills</a>
+          <a href="#experience" class="hover:underline hover:text-blue-500">Experience</a>
+          <a href="#education" class="hover:underline hover:text-blue-500">Education</a>
+          <a href="#portfolio" class="hover:underline hover:text-blue-500">portfolio</a>
+          <a href="#" class="hover:underline hover:text-blue-500">Contact me</a>
+        </div>
+
+        <button id="menu-btn" onclick="showMenu()" class=" menu lg:hidden relative ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex justify-end lg:hidden w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </button>
+
+       
+        <div id="phoneMenu" class="hidden h-38 absolute bg-white border shadow mx-2 flex flex-col items-center w-auto left-6 lg:hidden">
+          <button id="close-btn" onclick="closeMenu()"><span class="flex-end close ml-2 py-2 px-2" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+          </button>
+          <div class="flex flex-col ">
+            <a href="#" class="hover:underline hover:text-blue-500">Hello</a>
+            <a href="#skills" class="hover:underline hover:text-blue-500" >Skills</a>
+            <a href="#experience" class="hover:underline hover:text-blue-500">Experience</a>
+            <a href="#education" class="hover:underline hover:text-blue-500">Education</a>
+            <a href="#portfolio" class="hover:underline hover:text-blue-500">portfolio</a>
+            <a href="#" class="hover:underline hover:text-blue-500">Contact me</a>
+          </div>
+        </div>
+        
+        
+    </div>
+    
+  <div class="content mb-4">
+    <div class="section1 border-b grid grid-cols-1 lg:grid grid-cols-2">
+      <div id="hello" class="mx-8 mt-6 col-span-full order-2 lg:order-1 lg:col-start-1 lg:row-start-1">
+        <h1 class="font-bold text-4xl"> I am Regina Bosibori</h1>
+        <p class="py-4">I am a Web Developer located in Nairobi,Kenya. I currently work as a part time intern Web Developer for Fameve, located in Kenya. I am looking to take on more work and to increase my skills as a Web Developer.</p>
+        <ul class=" mt-4 space-y-4">
+          <li class="ml-1">PHONE: <span class="ml-6">+254706298098</span></li>
+          <li class="ml-1">EMAIL:<span class="ml-10">regina.angwenyi@gmail.com</span></li>
+          <li class="ml-1">ADDRESS:<span class="ml-6">Nairobi, Kenya</span></li>
+          <li class="ml-1 flex">SOCIAL:
+            <ul class="flex gap-x-4">
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+              </svg>
+              </li>
+              <li><svg xmlns="http://ww w.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+              </svg>
+              </li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+              </svg>
+              </li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+              </svg>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="flex space-x-2 mt-6">
+          <button onclick="openmodal()" class="openmodalBtn bg-blue-500 text-sm rounded-md py-6 px-8">CONTACT ME</button>
+          <a href="https://docs.google.com/document/d/1Zcsj6P0fHX7eZIRKvd8xSTy7FmxHpaRy/edit?usp=sharing&ouid=103096843172434123127&rtpof=true&sd=true" target="_blank" class="bg-blue-500 text-sm rounded-md py-6 px-8">DOWNLOAD CV</a>
+      </div>
+
+
+      </div>
+      <br>
+    <div class="col-span-full mt-1 lg:col-start-2 lg:row-start-1 lg:mb-8 order-1">
+      <img src="https://previews.aspirity.com/danny/media/hello-section/image.jpg">
+    </div>
+
+    
+  </div>
+      <div class="modal mx-1 lg:mx-32 border lg:p-24 hidden z-2 bg-white" id="modal">
+        <div class="modalcontent">
+          <span class="close ml-2 py-2 px-2" onclick="removeModal()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          </span>
+          <h1 class="col-start-1 col-end-2 font-bold">Let's work together</h1>
+          <p class="col-start-1 col-end-2">Are you working on something great? I would love to help make it happen! Drop me a message and start your project right now!</p>
+          <form class="mt-2 grid grid-cols-1 lg:grid grid-cols-2 lg:gap-y-1">
+            <div class="order-1 block col-span-full">
+              <label>name</label>
+              <input class="row-start-1 px-2 py-1 rounded-md bg-blue-300" type="name" placeholder="name">
+            </div>
+            <div class="order-2 block col-span-full">
+              <label>Email</label>
+              <input class="row-start-2 px-2 py-1 mt-2 w-1/2 rounded-md bg-blue-300" type="email" id="email" placeholder="example@gmail.com">
+            </div>
+            <div class="order-3 block col-span-full row-start-3 mt-2 lg:col-start-1 lg:row-start-1 lg:row-end-3 ml:2">
+              <textarea class="px-2 py-1 rounded-md border bg-blue-300 w-1/2 lg:w-full lg:h-full" placeholder="your message"></textarea>
+            </div>
+            <div class=" order-4 flex justify-between space-x-2 mt:10 lg:mt-10">
+              <button type="submit" class="btn-open rounded-md bg-green-500 text-white font-bold py-1 px-1">Send a message</button>
+              <button class="rounded-md bg-blue-500 p-2 text-white">Back to CV</button>
+            </div>
+          </form>
+          
+          
+        </div>
+      </div>
+        
+  
+  <div id="skills" class="mx-8 section2 grid grid-cols-1 mb-4 mt-2 lg:py-16 lg:mt-4 lg:ml-4 lg:grid grid-cols-2 border-b">
+    <div class="row-start-1 col-span-full lg:col-start-1 lg:row-start-1 mb-2 ">
+      <h1 class=" text-lg font-bold lg:text-4xl text-bold mt-6" >Skills</h1>
+      <p class="lg:col-start-1 lg:w-1/2">I am inspired by creating great work with people who are as passionate as I am about building something awesome.</p>
+    </div>
+    <div class="col-span-full row-start-2 mb-1 border-b lg:border-none lg:mt-12 lg:col-start-2 lg:row-start-1 :ml-12 lg:mb-1">
+      <h1 class="font-bold">Web development</h1>
+      <p>Javascript,Python,Django, HTML, tailwindcss </p>
+    </div>
+    <div class="row-start-3 mb-1 col-span-full border-b lg:border-none lg:col-start-2 lg:row-start-2">
+        <h1 class="font-bold">Front End Development</h1>
+        <p>Javascript,tailwindcss CSS</p>
+    </div>
+    <div class="row-start-4 col-span-full mb-1 lg:border-none lg:col-start-2 lg:row-start-3 ">
+      <h1 class="font-bold">Data analysis</h1>
+      <p>SPSS, STATA, R, Python</p>
+    </div>
+  </div>
+
+
+  <div id="experience" class="EXPERIENCE section3 grid grid-cols-1 mx-8 mt-1 lg:ml-4 lg:mt-2 py-20 border-b lg:grid grid-cols-2">
+    <div class="col-span-full row-start-1 col-start-1 lg:row-start-1 lg:col-start-1">
+      <h1 class="font-bold text-lg lg:text-4xl">Experience</h1> 
+      <p class="w-1/2">I partner with startups, organizations and Fortune 500 companies to build digital products that help clients overcome challenges and create lasting connections with millions of people every day.</p>
+  
+    </div>
+    <div class="col-span-full row-start-2 mt-2 mb-0 border-b lg:row-start-1 lg:col-start-2 lg:mt-6 lg:border-none ml-12">
+      <h1 class="font-bold">Business development assistant</h1>
+      <span class="text-slate-700">Fameve LTD,</span>
+      <span class="text-slate-700">May 2023- Present</span>
+      
+    </div>
+
+    <div class="col-span-full row-start-3 mb-0 border-b lg:col-start-2 lg:border-none lg:row-start-2 lg:ml-12 lg:mt-0">
+      <h1 class="font-bold">Analytics/accounts assistant</h1>
+      <span class="text-slate-700">Megawatt Technologies LTD,</span>
+      <span class="text-slate-700">June 2022- Feb 2023</span>
+      
+    </div>
+    <div class="col-span-full row-start-4 mb-1 border-b lg:col-start-3 lg:border-none lg:row-start-1 lg:ml-12 lg:mt-6">
+      <h1 class="font-bold">Impact measurement volunteer</h1>
+      <span class="text-slate-700">Goblis foundation</span>
+      <span class="text-slate-700">Jan 2022- Apr 2022</span>
+      
+    </div>
+
+    <div class="col-span-full row-start-5 lg:col-start-3 lg:row-start-2 lg:ml-12 lg:mb-2">
+      <h1 class="font-bold">Project administration assistant</h1>
+      <span class="text-slate-700">Cheza Ent</span>
+      <span class="text-slate-700">Apr 2021- Aug 2021</span>
+      
+  
+  
+    </div>
+    </div>
+  </div>
+  
+  <div id="education" class="section3 Education grid grid-cols-1 mx-8 lg:my-4 lg:ml-4 lg:py-10 lg:grid grid-cols-2 border-b">
+    <div class="col-span-full row-start-1 mb-2 lg:col-start-1 lg:row-start-1 lg:w-1/2">
+      <h1 class="font-bold text-lg lg:text-4xl">Education</h1>
+      <p>All my life I have been driven by my strong belief that education is important. I try to learn something new every single day.</p>
+    </div>
+  
+    <div class="col-span-full row-start-2 mb-2 border-b lg:col-start-2 lg:row-start-1 lg:border-none lg:ml-12">
+      <h1 class="font-bold text-lg">Bachelor of Economics and statistics</h1>
+      <span class="text-slate-700">University of Nairobi</span>
+      <span class="text-slate-700">2016-2020</span>
+      <p class="font-italic">Economics, statistical analysis,research methods</p>  
+    </div>
+
+    <div class="col-span-full row-start-3 mb-2 border-b lg:col-start-2 lg:row-start-2 lg:border-none lg:ml-12">
+      <h1 class="font-bold text-lg">IBT Learning Bootcamp training</h1>
+      <span class="text-slate-700">IBT learning Africa</span>
+      <span class="text-slate-700">Apr 2024- Dec 2024</span>
+      <p class="font-italic">Full stack software engineering</p>  
+    </div>
+  
+    <div class="col-span-full row-start-4 mb-2 border-b lg:col-start-2 lg:row-start-3 lg:border-none lg:mb-4 lg:ml-12">
+      <h1 class="font-bold text-lg">Certificate in data analysis and Business Intelligence</h1>
+      <span class="text-slate-700">Dalworth Research and statistical training center</span>
+      <span class="text-slate-700">Jan 2021-March 2021</span>
+      <p><span class="font-bold text-md mb-1">Modules:</span> Data analysis with SPSS, STATA,R studio</p>
+      <p> <span class="font-bold">Modules:</span>Data analysis with python pandas, visualization(matplotlib, Seaborn)
+      </p>
+    </div>
+  
+    <div class="col-span-full row-start-5 mb-2 lg:col-start-2 lg:mb-4 lg:row-start-4 lg:ml-12">
+        <h1 class="font-bold text-lg">Certificate in monitoring and evaluation</h1>
+        <span class="text-slate-700">Dalworth Research and statistical training center</span>
+        <span class="text-slate-700">May2023-Present</span>
+        <p> <span class="font-bold">Modules:</span>Technical proposal writing, designing study designs and work plans, data collection tools and methods, Logical framework, MS project.</p>
+
+    </div>
+  </div>
+  
+  <div id="portfolio" class="section4 text-nowrap mt-4 mx-8 grid grid-cols-1 col-span-full  portfolio lg:ml-4 lg:mt-4 lg:grid grid-cols-4 border-b">
+    <div>
+      <h1 class="block text-bold text-md lg:text-4xl">Portfolio</h1>
+  
+    </div>
+    <div class="menu row-start-2 my-2 text-md flex text-xs space-x-2 lg:col-span-4 lg:px-8 justify-between lg:justify-around lg:space-x-2">
+      <a href="#" class="whitespace-nowrap hover:underline hover:text-blue-500">all projects</a>
+      <a href="#" class="whitespace-nowrap hover:underline hover:text-blue-500">Web development</a>
+      <a href="#" class="whitespace-nowrap hover:underline hover:text-blue-500">data analysis</a>
+      
+    </div>
+  </div>
+  
+  </div>
+
+
+  
+</body>
+</html>
